@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaDownload } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -34,7 +34,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Botón para abrir Gmail */}
+        {/* Botón para enviar mensaje por email */}
         <motion.a
           href="mailto:lopezcanoalvaro@gmail.com?subject=Contacto%20desde%20tu%20portafolio&body=Hola%20Álvaro,"
           className="mt-6 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg shadow-md transition duration-300 inline-block"
@@ -42,6 +42,18 @@ const Contact = () => {
           whileTap={{ scale: 0.9 }}
         >
           Enviar Mensaje
+        </motion.a>
+
+        {/* Botón para descargar el CV */}
+        <motion.a
+          href="/AlvaroCV.pdf"
+          download="Alvaro_Lopez_CV.pdf"
+          className="mt-4 px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg shadow-md transition duration-300 inline-flex items-center space-x-2"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <FaDownload className="text-lg" />
+          <span>Descargar CV</span>
         </motion.a>
       </motion.div>
     </section>

@@ -6,12 +6,12 @@ const skills = [
   { icon: <FaHtml5 className="text-orange-500 text-5xl" />, level: 5 },
   { icon: <FaCss3Alt className="text-blue-500 text-5xl" />, level: 4.5 },
   { icon: <FaJs className="text-yellow-500 text-5xl" />, level: 4 },
-  { icon: <FaReact className="text-blue-300 text-5xl" />, level: 4 },
+  { icon: <FaReact className="text-blue-300 text-5xl" />, level: 3 },
   { icon: <FaNodeJs className="text-green-500 text-5xl" />, level: 3.5 },
   { icon: <SiMongodb className="text-green-400 text-5xl" />, level: 3 },
   { icon: <SiPython className="text-yellow-400 text-5xl" />, level: 3.5 },
   { icon: <FaJava className="text-purple-400 text-5xl" />, level: 5 },
-  { icon: <FaGit className="text-red-500 text-5xl" />, level: 4.5 },
+  { icon: <FaGit className="text-red-500 text-5xl" />, level: 2 },
 ];
 
 // Función para renderizar estrellas grises dinámicamente con animación
